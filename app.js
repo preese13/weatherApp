@@ -52,7 +52,7 @@ $( document ).ready(function(){
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
        $("#rainnum").append(rain);
-       $("#wind").append(wind);
+       $("#wind").prepend(wind);
    })
   });
 
@@ -90,7 +90,7 @@ $( document ).ready(function(){
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
        $("#rain").append(rain);
-       $("#wind").append(wind);
+       $("#wind").prepend(wind);
    })
   });
   $( "#wy" ).click(function() {
@@ -127,7 +127,7 @@ $( document ).ready(function(){
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
        $("#rain").append(rain);
-       $("#wind").append(wind);
+       $("#wind").prepend(wind);
    })
   });
   $( "#ny" ).click(function() {
@@ -164,7 +164,7 @@ $( document ).ready(function(){
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
        $("#rain").append(rain);
-       $("#wind").append(wind);
+       $("#wind").prepend(wind);
    })
   });
 

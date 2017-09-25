@@ -23,7 +23,13 @@ body{
   justify-content: center;
 }
 .info{
-  width: 33.3%
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title{
+  font-size: 20px;
 }
 #top{
   height: 25%;
@@ -158,7 +164,6 @@ f ont-family: 'Poppins', sans-serif;
 .colorScheme19{
   background-color: #1B0A3E;
   color: #F83C7A;
-  font-family:'Rubik Mono One' ;
 }
 .colorScheme20{
   background-color: #F55254;
@@ -240,7 +245,7 @@ overlay css
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: 0.5s;
+    transition: 1.5s;
     justify-content: center;
 }
 
