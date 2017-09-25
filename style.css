@@ -240,7 +240,7 @@ overlay css
 .overlay a {
     padding-top: 5vh;
     text-decoration: none;
-    font-size: 10vh;
+    font-size: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
