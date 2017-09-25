@@ -49,9 +49,10 @@ body{
 }
 #bottom{
   height: 25%;
-  width: 100%;
+  width: 90%;
+  margin-right: 10%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   font-size: 7vh;
 }
@@ -59,7 +60,7 @@ body{
 .bottomItem{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   width: 33.3%;
 }
