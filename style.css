@@ -235,7 +235,7 @@ overlay css
 .overlay a {
     padding-top: 5vh;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
