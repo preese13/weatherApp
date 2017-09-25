@@ -1,0 +1,266 @@
+html{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.pageContainer{
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.oneThird{
+  text-align: center;
+  justify-content: center;
+}
+.info{
+  width: 33.3%
+}
+#top{
+  height: 25%;
+  width: 100%;
+  font-size: 7vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#middle{
+  height: 50%;
+  width: 100%;
+  font-size: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bottom{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 7vh;
+}
+
+#winDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+#location{
+  font-weight: 400;
+}
+
+
+p{
+  margin: 0px;
+}
+
+.colorScheme1{
+  color:#403355;
+  background-color: #F5BEEA;
+f ont-family: 'Poppins', sans-serif;
+}
+.colorScheme2{
+  color: #643B6F;
+  background-color: #36E3D9;
+  font-family: 'Alegreya';
+
+}
+.colorScheme3{
+  color: #B927C8;
+  background-color: #E7F7E7;
+  font-family: 'Chivo';
+}
+.colorScheme4{
+  background-color: #44E161;
+  color: #353091;
+  font-family: 'Chivo';
+}
+.colorScheme5{
+  color:#111118;
+  background-color: #04A8EF;
+  font-family: 'Archivo Narrow';
+}
+.colorScheme6{
+  color: #F8E7D6;
+  background-color: #C5176F;
+  font-family: 'Chivo';
+}
+.colorScheme7{
+  color: #CCACF8;
+  background-color: #4B3A3B;
+  font-family: 'Chivo';
+}
+.colorScheme8{
+  color: #1B0A3E;
+  background-color: #F83C7A;
+  font-family: 'Chivo';
+}
+.colorScheme9{
+  color: #F55254;
+  background-color: #3B0833;
+  font-family: 'Eczar';
+}
+.colorScheme10{
+  color: #F68D5D;
+  background-color: #061A25;
+  font-family: 'Fira Sans';
+}
+.colorScheme11{
+  color: #E05137;
+  background-color: #394140;
+  font-family: 'Inconsolata';
+}
+.colorScheme12{
+  background-color: #403355;
+  color: #F5BEEA;
+  font-family: 'Karla';
+}
+.colorScheme13{
+  background-color: #643B6F;
+  color: #36E3D9;
+  font-family: 'Libre Franklin';
+}
+.colorScheme14{
+  background-color: #B927C8;
+  color: #E7F7E7;
+  font-family:'Lora' ;
+}
+.colorScheme15{
+  color: #44E161;
+  background-color: #353091;
+  font-family: 'Chivo' ;
+}
+.colorScheme16{
+  background-color: #111118;
+  color: #04A8EF;
+  font-family: 'roboto' ;
+}
+.colorScheme17{
+  background-color: #F8E7D6;
+  color: #C5176F;
+  font-family: 'Roboto Slab';
+}
+.colorScheme18{
+  background-color: #CCACF8;
+  color: #4B3A3B;
+  font-family: 'Rubik';
+}
+.colorScheme19{
+  background-color: #1B0A3E;
+  color: #F83C7A;
+  font-family:'Rubik Mono One' ;
+}
+.colorScheme20{
+  background-color: #F55254;
+  color: #3B0833;
+  font-family: 'Source Sans Pro' ;
+}
+.colorScheme21{
+  background-color: #F68D5D;
+  color: #061A25;
+  font-family: 'Source Serif Pro' ;
+}
+.colorScheme22{
+  background-color: #E05137;
+  color: #394140;
+  font-family: 'Space Mono';
+}
+
+/*
+#8F3985 #07BEB8
+#7DDF64 #ED4D6E
+#5438DC #32E875
+#FDB833 #1789FC
+#FA198B #0E0004
+#0EB1D2 #2B4141
+#23CE6B #272D2D
+#F564A9 #533B4D
+#0F1020 #FAA6FF
+#EC0868 #C200FB
+#0A2463 #E2E2E2
+#5DFDCB #7CC6FE
+#6B2D5C #F0386B
+#7F2982 #16001E
+#645DD7 #FB62F6
+*/
+
+
+/*
+overlay css
+*/
+.container{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+.overlayElement{
+
+}
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 5px;
+
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    height: 80vh;
+}
+
+.overlay a {
+    padding-top: 10vh;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  @media screen and (max-width: 600px) {
+    #middle{
+      font-size: 30vh;
+    }
+    }
