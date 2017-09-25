@@ -62,7 +62,7 @@ body{
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  width: 33.3%;
+  width: 33%;
 }
 
 #winDiv{
