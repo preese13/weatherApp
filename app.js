@@ -198,10 +198,12 @@ function openNav() {
     document.getElementById("myNav").style.width = "25%";
     document.getElementById("pageContainer").style.width = "75vw";
     $("span").css("display","none")
+    $("middle").css("font-size","20vw")
 }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
       document.getElementById("pageContainer").style.width = "100vw";
       $("span").css("display","block")
+      ("middle").css("font-size","30vh")
 }

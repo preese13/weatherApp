@@ -260,7 +260,8 @@ overlay css
   }
 
   @media screen and (max-width: 600px) {
-    #middle{
-      font-size: 30vh;
+    #temperature{
+      font-size: 25vh;
     }
+
     }
