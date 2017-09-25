@@ -19,6 +19,7 @@ $( document ).ready(function(){
   var url4 = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/NY/new_york.json'
 
   $( "#dc" ).click(function() {
+    closeNav()
      $.ajax({
        url: url,
        type: 'get',
@@ -56,6 +57,7 @@ $( document ).ready(function(){
   });
 
   $( "#de" ).click(function() {
+    closeNav()
      $.ajax({
        url: url2,
        type: 'get',
@@ -92,6 +94,7 @@ $( document ).ready(function(){
    })
   });
   $( "#wy" ).click(function() {
+    closeNav()
      $.ajax({
        url: url3,
        type: 'get',
@@ -128,6 +131,7 @@ $( document ).ready(function(){
    })
   });
   $( "#ny" ).click(function() {
+    closeNav()
      $.ajax({
        url: url4,
        type: 'get',
@@ -195,9 +199,10 @@ $( document ).ready(function(){
 })
 
 function openNav() {
-    document.getElementById("myNav").style.width = "35%";
-    document.getElementById("pageContainer").style.width = "65vw";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("pageContainer").style.width = "0vw";
     $("span").css("display","none")
+    $("#pageContainer").css("display","none")
     $("middle").css("font-size","20vw")
 }
 
@@ -205,5 +210,6 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
       document.getElementById("pageContainer").style.width = "100vw";
       $("span").css("display","block")
-      ("middle").css("font-size","30vh")
+      $("#pageContainer").css("display","block")
+
 }
