@@ -35,7 +35,7 @@ body{
 #middle{
   height: 50%;
   width: 100%;
-  font-size: 30vh;
+  font-size: 23vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,7 +261,7 @@ overlay css
 
   @media screen and (max-width: 600px) {
     #temperature{
-      font-size: 25vh;
+      font-size: 20vh;
     }
 
     }
