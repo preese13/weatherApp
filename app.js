@@ -82,14 +82,14 @@ $( document ).ready(function(){
        $("#icon").empty();
        $("#temperature").empty();
        $("#humidity").empty();
-       $("#rain").empty();
+       $("#rainnum").empty();
        $("#wind").empty();
 
        $("#location").append(city + ", " + state);
        $("#icon").append(icon);
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
-       $("#rain").append(rain);
+       $("#rainnum").append(rain);
        $("#wind").prepend(wind);
    })
   });
@@ -119,14 +119,14 @@ $( document ).ready(function(){
        $("#icon").empty();
        $("#temperature").empty();
        $("#humidity").empty();
-       $("#rain").empty();
+       $("#rainnum").empty();
        $("#wind").empty();
 
        $("#location").append(city + ", " + state);
        $("#icon").append(icon);
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
-       $("#rain").append(rain);
+       $("#rainnum").append(rain);
        $("#wind").prepend(wind);
    })
   });
@@ -156,15 +156,15 @@ $( document ).ready(function(){
        $("#icon").empty();
        $("#temperature").empty();
        $("#humidity").empty();
-       $("#rain").empty();
+       $("#rainnum").empty();
        $("#wind").empty();
 
        $("#location").append(city + ", " + state);
        $("#icon").append(icon);
        $("#temperature").prepend(temp);
        $("#humidity").append(humidity);
-       $("#rain").append(rain);
-       $("#wind").prepend(wind);
+       $("#rainnum").append(rain);
+       $("#wind").append(wind);
    })
   });
 
@@ -192,7 +192,7 @@ $( document ).ready(function(){
     $("#icon").append(icon);
     $("#temperature").prepend(temp);
     $("#humidity").append(humidity);
-    $("#rain").append(rain );
+    $("#rainnum").append(rain );
     $("#wind").append(wind );
 })
 
