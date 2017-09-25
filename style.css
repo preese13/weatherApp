@@ -56,6 +56,14 @@ body{
   font-size: 7vh;
 }
 
+.bottomItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 33.3%;
+}
+
 #winDiv{
   display: flex;
   flex-direction: column;
