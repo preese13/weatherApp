@@ -8,7 +8,7 @@ $( document ).ready(function(){
    $('#myNav').addClass('myNav1' + num);
 
 
-   $( "body" ).dblclick(function() {
+   $( "body" ).click(function() {
      location.reload();
    });
 
