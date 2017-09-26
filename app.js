@@ -8,7 +8,7 @@ $( document ).ready(function(){
    $('#myNav').addClass('myNav1' + num);
 
 
-   $( "body" ).click(function() {
+   $( "#temperature" ).click(function() {
      location.reload();
    });
 
