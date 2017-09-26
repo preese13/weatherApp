@@ -73,129 +73,141 @@ body{
 #location{
   font-weight: 400;
 }
-
+#icon{
+  font-weight: 700;
+}
 
 p{
   margin: 0px;
 }
 
+
 .colorScheme1{
-  color:#403355;
-  background-color: #F5BEEA;
-f ont-family: 'Poppins', sans-serif;
+color:#8F3985;
+background-color: #07BEB8;
+font-family: 'Abril Fatface', cursive;
 }
 .colorScheme2{
   color: #643B6F;
   background-color: #36E3D9;
-  font-family: 'Alegreya';
+  font-family: 'Dosis', sans-serif;
 
 }
 .colorScheme3{
   color: #B927C8;
   background-color: #E7F7E7;
-  font-family: 'Chivo';
+  font-family: 'Nova Slim', cursive;
 }
 .colorScheme4{
   background-color: #44E161;
   color: #353091;
-  font-family: 'Chivo';
+  font-family: 'Nova Oval', cursive;
 }
 .colorScheme5{
   color:#111118;
   background-color: #04A8EF;
-  font-family: 'Archivo Narrow';
+  font-family: 'Nova Oval', cursive;
 }
 .colorScheme6{
   color: #F8E7D6;
   background-color: #C5176F;
-  font-family: 'Chivo';
+  font-family: 'Nova Square', cursive;
 }
 .colorScheme7{
-  color: #CCACF8;
-  background-color: #4B3A3B;
-  font-family: 'Chivo';
+  color: #8F3985;
+  background-color: #07BEB8;
+  font-family: 'Quicksand', sans-serif;
 }
 .colorScheme8{
   color: #1B0A3E;
   background-color: #F83C7A;
-  font-family: 'Chivo';
+  font-family: 'Quicksand', sans-serif;
 }
 .colorScheme9{
-  color: #F55254;
-  background-color: #3B0833;
-  font-family: 'Eczar';
+
+  color: #32E875;
+  background: #5438DC;
+  font-family: 'Six Caps', sans-serif;
 }
 .colorScheme10{
-  color: #F68D5D;
-  background-color: #061A25;
-  font-family: 'Fira Sans';
+  color: #FA198B;
+  background-color: #0E0004;
+  font-family: 'Dosis', sans-serif;
 }
 .colorScheme11{
-  color: #E05137;
-  background-color: #394140;
-  font-family: 'Inconsolata';
+  background-color:  #FFF200;
+  color: #000000;
+  font-family: 'Wire One', sans-serif;
 }
 .colorScheme12{
-  background-color: #403355;
-  color: #F5BEEA;
-  font-family: 'Karla';
+  background-color: #3C1210;
+  color: #FDB515;
+  font-family: 'Nova Square', cursive;
 }
 .colorScheme13{
   background-color: #643B6F;
   color: #36E3D9;
-  font-family: 'Libre Franklin';
+font-family: 'Righteous', cursive;
 }
 .colorScheme14{
   background-color: #B927C8;
   color: #E7F7E7;
-  font-family:'Lora' ;
+  font-family: 'Rum Raisin', sans-serif;
 }
 .colorScheme15{
   color: #44E161;
   background-color: #353091;
-  font-family: 'Chivo' ;
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 5px;
 }
 .colorScheme16{
   background-color: #111118;
   color: #04A8EF;
-  font-family: 'roboto' ;
+  font-family: 'Unica One', cursive;
 }
 .colorScheme17{
   background-color: #F8E7D6;
   color: #C5176F;
-  font-family: 'Roboto Slab';
+  font-family: 'Unica One', cursive;
 }
 .colorScheme18{
-  background-color: #CCACF8;
-  color: #4B3A3B;
-  font-family: 'Rubik';
+  background-color: #0EB1D2 ;
+  color: #E2E2E2;
+  font-family: 'Wire One', sans-serif;
 }
 .colorScheme19{
   background-color: #1B0A3E;
   color: #F83C7A;
+  font-family: 'Concert One', cursive;
 }
 .colorScheme20{
-  background-color: #F55254;
-  color: #3B0833;
-  font-family: 'Source Sans Pro' ;
+  background-color: #1789FC;
+  color: #FDB833;
+  font-family: 'Amatic SC', cursive;
 }
 .colorScheme21{
-  background-color: #F68D5D;
-  color: #061A25;
-  font-family: 'Source Serif Pro' ;
+  background-color: #0D2240;
+  color: #CF0A2C;
+  font-family: 'Dorsa', sans-serif;
+  letter-spacing: 3px;
 }
 .colorScheme22{
-  background-color: #E05137;
-  color: #394140;
-  font-family: 'Space Mono';
+  background-color: white;
+  color: #030826;
+  font-family: 'Oleo Script', cursive;
 }
 
+
 /*
-#8F3985 #07BEB8
-#7DDF64 #ED4D6E
+
+
+
+
+font-family: 'Rum Raisin', sans-serif;
+font-family: 'Righteous', cursive;
+
 #5438DC #32E875
 #FDB833 #1789FC
-#FA198B #0E0004
 #0EB1D2 #2B4141
 #23CE6B #272D2D
 #F564A9 #533B4D
