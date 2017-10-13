@@ -2,14 +2,17 @@ html{
   margin: 0px;
   padding: 0px;
 }
+
 body{
   margin: 0px;
   padding: 0px;
 }
+
 .pageContainer{
   margin: 0px;
   margin-top: 10vh;
-  height: 90vh;
+  margin-bottom: 10vh;
+  height: 80vh;
   width: 100vw;
   font-weight: 600;
 
@@ -18,19 +21,23 @@ body{
   justify-content: space-around;
   flex-direction: column;
 }
+
 .oneThird{
   text-align: center;
   justify-content: center;
 }
+
 .info{
   width: 33.3%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
 .title{
   font-size: 50px;
 }
+
 #top{
   height: 25%;
   width: 100%;
@@ -127,7 +134,7 @@ font-family: 'Abril Fatface', cursive;
 
   color: #32E875;
   background: #5438DC;
-  font-family: 'Six Caps', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .colorScheme10{
   color: #FA198B;
@@ -147,7 +154,7 @@ font-family: 'Abril Fatface', cursive;
 .colorScheme13{
   background-color: #643B6F;
   color: #36E3D9;
-font-family: 'Righteous', cursive;
+font-family: 'Amatic SC', cursive;
 }
 .colorScheme14{
   background-color: #B927C8;
@@ -155,10 +162,9 @@ font-family: 'Righteous', cursive;
   font-family: 'Rum Raisin', sans-serif;
 }
 .colorScheme15{
-  color: #44E161;
-  background-color: #353091;
-  font-family: 'Six Caps', sans-serif;
-  letter-spacing: 5px;
+  background-color:  #FFF200;
+  color: #000000;
+  font-family: 'Bahiana', cursive;
 }
 .colorScheme16{
   background-color: #111118;
@@ -173,7 +179,7 @@ font-family: 'Righteous', cursive;
 .colorScheme18{
   background-color: #0EB1D2 ;
   color: #E2E2E2;
-  font-family: 'Wire One', sans-serif;
+  font-family: 'Amatic SC', sans-serif;
 }
 .colorScheme19{
   background-color: #1B0A3E;
@@ -192,8 +198,8 @@ font-family: 'Righteous', cursive;
   letter-spacing: 3px;
 }
 .colorScheme22{
-  background-color: white;
-  color: #030826;
+  color: white;
+  background-color: #030826;
   font-family: 'Oleo Script', cursive;
 }
 
