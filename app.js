@@ -1,8 +1,7 @@
 
 $( document ).ready(function(){
 
-  var num  = 22
-  //Math.floor(Math.random() * 22) + 1
+  var num  = Math.floor(Math.random() * 22) + 1
    $('body').addClass('colorScheme' + num);
    $('.overlayElement').addClass('colorScheme' + num);
    $('.closebtn').addClass('colorScheme' + num);
