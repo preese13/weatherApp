@@ -8,6 +8,11 @@ body{
   padding: 0px;
 }
 
+p{
+  margin: 0px;
+}
+
+
 .pageContainer{
   margin: 0px;
   margin-top: 10vh;
@@ -38,6 +43,14 @@ body{
   font-size: 50px;
 }
 
+.bottomItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 33%;
+}
+
 #top{
   height: 25%;
   width: 100%;
@@ -64,13 +77,6 @@ body{
   font-size: 7vh;
 }
 
-.bottomItem{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 33%;
-}
 
 #winDiv{
   display: flex;
@@ -83,218 +89,3 @@ body{
 #icon{
   font-weight: 700;
 }
-
-p{
-  margin: 0px;
-}
-
-
-.colorScheme1{
-color:#8F3985;
-background-color: #07BEB8;
-font-family: 'Abril Fatface', cursive;
-}
-.colorScheme2{
-  color: #643B6F;
-  background-color: #36E3D9;
-  font-family: 'Dosis', sans-serif;
-
-}
-.colorScheme3{
-  color: #B927C8;
-  background-color: #E7F7E7;
-  font-family: 'Nova Slim', cursive;
-}
-.colorScheme4{
-  background-color: #44E161;
-  color: #353091;
-  font-family: 'Nova Oval', cursive;
-}
-.colorScheme5{
-  color:#111118;
-  background-color: #04A8EF;
-  font-family: 'Nova Oval', cursive;
-}
-.colorScheme6{
-  color: #F8E7D6;
-  background-color: #C5176F;
-  font-family: 'Nova Square', cursive;
-}
-.colorScheme7{
-  color: #8F3985;
-  background-color: #07BEB8;
-  font-family: 'Quicksand', sans-serif;
-}
-.colorScheme8{
-  color: #1B0A3E;
-  background-color: #F83C7A;
-  font-family: 'Quicksand', sans-serif;
-}
-.colorScheme9{
-
-  color: #32E875;
-  background: #5438DC;
-  font-family: 'Quicksand', sans-serif;
-}
-.colorScheme10{
-  color: #FA198B;
-  background-color: #0E0004;
-  font-family: 'Dosis', sans-serif;
-}
-.colorScheme11{
-  background-color:  #FFF200;
-  color: #000000;
-  font-family: 'Bahiana', cursive;
-}
-.colorScheme12{
-  background-color: #3C1210;
-  color: #FDB515;
-  font-family: 'Nova Square', cursive;
-}
-.colorScheme13{
-  background-color: #643B6F;
-  color: #36E3D9;
-font-family: 'Amatic SC', cursive;
-}
-.colorScheme14{
-  background-color: #B927C8;
-  color: #E7F7E7;
-  font-family: 'Rum Raisin', sans-serif;
-}
-.colorScheme15{
-  background-color:  #FFF200;
-  color: #000000;
-  font-family: 'Bahiana', cursive;
-}
-.colorScheme16{
-  background-color: #111118;
-  color: #04A8EF;
-  font-family: 'Unica One', cursive;
-}
-.colorScheme17{
-  background-color: #F8E7D6;
-  color: #C5176F;
-  font-family: 'Unica One', cursive;
-}
-.colorScheme18{
-  background-color: #0EB1D2 ;
-  color: #E2E2E2;
-  font-family: 'Amatic SC', sans-serif;
-}
-.colorScheme19{
-  background-color: #1B0A3E;
-  color: #F83C7A;
-  font-family: 'Concert One', cursive;
-}
-.colorScheme20{
-  background-color: #1789FC;
-  color: #FDB833;
-  font-family: 'Amatic SC', cursive;
-}
-.colorScheme21{
-  background-color: #0D2240;
-  color: #CF0A2C;
-  font-family: 'Dorsa', sans-serif;
-  letter-spacing: 3px;
-}
-.colorScheme22{
-  color: white;
-  background-color: #030826;
-  font-family: 'Oleo Script', cursive;
-}
-
-
-/*
-
-
-
-
-font-family: 'Rum Raisin', sans-serif;
-font-family: 'Righteous', cursive;
-
-#5438DC #32E875
-#FDB833 #1789FC
-#0EB1D2 #2B4141
-#23CE6B #272D2D
-#F564A9 #533B4D
-#0F1020 #FAA6FF
-#EC0868 #C200FB
-#0A2463 #E2E2E2
-#5DFDCB #7CC6FE
-#6B2D5C #F0386B
-#7F2982 #16001E
-#645DD7 #FB62F6
-*/
-
-
-/*
-overlay css
-*/
-.container{
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 5px;
-  top: 5px;
-  position: absolute;
-}
-
-.overlayElement{
-
-}
-.overlay {
-    height: 100vh;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 5px;
-
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    height: 80vh;
-}
-
-.overlay a {
-    padding-top: 5vh;
-    text-decoration: none;
-    font-size: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: 1.5s;
-    justify-content: center;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 75px;
-    padding: 0px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-
-  @media screen and (max-width: 700px) {
-    #temperature{
-      font-size: 20vh;
-    }
-
-    }

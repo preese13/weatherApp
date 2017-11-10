@@ -1,0 +1,71 @@
+/*
+overlay css
+*/
+.container{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 35px;
+  top: 35px;
+  position: absolute;
+}
+
+.overlayElement{
+
+}
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 5px;
+
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    height: 80vh;
+}
+
+.overlay a {
+    padding-top: 5vh;
+    text-decoration: none;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1.5s;
+    justify-content: center;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 75px;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  @media screen and (max-width: 700px) {
+    #temperature{
+      font-size: 20vh;
+    }
+
+    }

@@ -1,6 +1,7 @@
 
 $( document ).ready(function(){
 
+  //selects random color scheme and applies to relevant sections
   var num  = Math.floor(Math.random() * 22) + 1
    $('body').addClass('colorScheme' + num);
    $('.overlayElement').addClass('colorScheme' + num);
@@ -8,16 +9,19 @@ $( document ).ready(function(){
    $('#myNav').addClass('myNav1' + num);
 
 
+   //reloads page on click of number in center of page
    $( "#temperature" ).click(function() {
      location.reload();
    });
 
   // Make sure to add your API key to the URL!
   var url = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/DC/washington.json'
-  var url2 = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/DE/bethany_beach.json'
+  var url2 = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/DE/Bethany_Beach.json'
   var url3 = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/WY/jackson_hole.json'
   var url4 = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/NY/new_york.json'
 
+
+  //switches current location to DC
   $( "#dc" ).click(function() {
     closeNav()
      $.ajax({
@@ -29,6 +33,8 @@ $( document ).ready(function(){
        // (2) Type of HTTP request.
        // (3) Datatype. Usually JSON.
      })
+
+      //updates variables for relevant fields from API
      .done((response) => {
        var city = response.location.city
        var state = response.location.state
@@ -40,6 +46,7 @@ $( document ).ready(function(){
        var icon = response.current_observation.icon
        console.log(city, state, temp, humidity, wind, rain, icon)
 
+       //empties any fields already on page
        $("#location").empty();
        $("#icon").empty();
        $("#temperature").empty();
@@ -47,6 +54,7 @@ $( document ).ready(function(){
        $("#rainnum").empty();
        $("#wind").empty();
 
+       //fills those fields with new variables
        $("#location").append(city + ", " + state);
        $("#icon").append(icon);
        $("#temperature").prepend(temp);
@@ -56,6 +64,7 @@ $( document ).ready(function(){
    })
   });
 
+  //switches current location to Bethany_Beach
   $( "#de" ).click(function() {
     closeNav()
      $.ajax({
@@ -93,6 +102,8 @@ $( document ).ready(function(){
        $("#wind").prepend(wind);
    })
   });
+
+  //switches current location to jackson_hole
   $( "#wy" ).click(function() {
     closeNav()
      $.ajax({
@@ -130,6 +141,8 @@ $( document ).ready(function(){
        $("#wind").prepend(wind);
    })
   });
+
+  //switches current location to nyc
   $( "#ny" ).click(function() {
     closeNav()
      $.ajax({
@@ -168,6 +181,7 @@ $( document ).ready(function(){
    })
   });
 
+  //initial get from API, defaults to DC
   $.ajax({
     url: url,
     type: 'get',
@@ -197,7 +211,7 @@ $( document ).ready(function(){
 })
 
 })
-
+  //opens the overlay
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("pageContainer").style.width = "0vw";
@@ -205,11 +219,11 @@ function openNav() {
     $("#pageContainer").css("display","none")
     $("middle").css("font-size","20vw")
 }
-
+//closes the overlay
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-      document.getElementById("pageContainer").style.width = "100vw";
-      $("span").css("display","block")
-      $("#pageContainer").css("display","block")
+    document.getElementById("pageContainer").style.width = "100vw";
+    $("span").css("display","block")
+    $("#pageContainer").css("display","block")
 
 }
