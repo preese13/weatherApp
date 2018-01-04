@@ -97,16 +97,14 @@ span{
 @media (max-width: 680px) { 
 
   .title{
-    font-size: 50px;
+    font-size: 30px;
   }
 
   #top{
     font-size: 4vh;
   }
 
-  #bottom{
-    font-size: 10px;
-  }
+
 
   #middle{
     font-size: 20vh;
