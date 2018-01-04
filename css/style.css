@@ -93,29 +93,3 @@ span{
 #icon{
   font-weight: 700;
 }
-
-@media (max-width: 680px) { 
-
-  .title{
-    font-size: 30px;
-  }
-
-  #top{
-    font-size: 4vh;
-  }
-
-
-
-  #middle{
-    font-size: 20vh;
-  }
-
-  span{
-    font-size:70px;
-  }
-
- }
-
- @media (max-width: 480px) { 
-  
- }
