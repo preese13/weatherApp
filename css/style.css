@@ -105,7 +105,7 @@ span{
   }
 
   #bottom{
-    font-size: 5vh;
+    font-size: 20px;
   }
 
   #middle{
@@ -120,9 +120,4 @@ span{
 
  @media (max-width: 480px) { 
   
-  
-    #bottom{
-      font-size: 3vh;
-    }
-  
-   }
+ }
