@@ -12,6 +12,10 @@ p{
   margin: 0px;
 }
 
+span{
+  font-size:100px;
+}
+
 
 .pageContainer{
   margin: 0px;
@@ -89,3 +93,27 @@ p{
 #icon{
   font-weight: 700;
 }
+
+@media (max-width: 680px) { 
+
+  .title{
+    font-size: 50px;
+  }
+
+  #top{
+    font-size: 4vh;
+  }
+
+  #bottom{
+    font-size: 5vh;
+  }
+
+  #middle{
+    font-size: 20vh;
+  }
+
+  span{
+    font-size:70px;
+  }
+
+ }
