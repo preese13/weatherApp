@@ -1,0 +1,104 @@
+.display-none {
+    display: none;
+}
+
+.navbar-item {
+    height: calc((100vh - 60px) / 2);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-section {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+
+.navbar-mobile {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    color: white(0, 0, 0, 1);
+    background-color: #26A9DF(255, 255, 255);
+    z-index: 10000;
+}
+
+.navbar-open {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    height: fit-content;
+    background-color: #26A9DF;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+    color: white;
+}
+
+.nav-info-container {
+    -webkit-transition: max-height .5s;
+    -moz-transition: max-height .5s;
+    -ms-transition: max-height .5s;
+    -o-transition: max-height .5s;
+    transition: max-height .5s;
+    color: white;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+.display {
+    max-height: 150vh;
+    z-index: 1;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255, .5);
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+input:focus {
+    background-color: inherit;
+    outline: none !important;
+}
+
+select:focus {
+    background-color: #26A9DF;
+    outline: none !important;
+}
+
+
+#city-submit {
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+#zip-submit {
+    border: 1px solid white;
+    border-radius: 1px;
+}

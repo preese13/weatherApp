@@ -1,60 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC:400,700|Concert+One|Dorsa|Dosis:400,700|Nova+Oval|Nova+Slim|Nova+Square|Quicksand:400,700|Righteous|Rum+Raisin|Six+Caps|Unica+One|Wire+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <link rel="stylesheet" href="css/colorscheme.css">
-    <link rel="stylesheet" href="css/overlay.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-  <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a class="overlayElement" href="#"><p id="dc">Washington, DC</p></a>
-      <a class="overlayElement" href="#"><p id="de">Bethany Beach, DE</p></a>
-      <a class="overlayElement" href="#"><p id="wy">Jackson Hole, WY</p></a>
-      <a class="overlayElement" href="#"><p id="ny">New York, NY</p></a>
+
+<head>
+  <script src="https://use.fontawesome.com/e302e4288f.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/weather-icons-wind.css">
+  <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="css/weather-icons.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <div class="navbar-mobile">
+    <div class="navbar-container">
+      <div class="nav-section">
+        <i id="nav-icon" class="fa fa-search" style="font-size: 38px; position: fixed; top: 10px; left: 50px;"></i>
+
+      </div>
+      <div class="nav-section">
+        <i id="nav-refresh" class="wi wi-refresh" style="font-size: 50px; position: fixed; top: 10px; right: 50px;"></i>
+      </div>
+      <div class="nav-info-container">
+        <div class="navbar-item">
+          <form id="zip-form">
+            <input autocomplete="off" type="text" id="zip" size="15" maxlength="15" placeholder="ZIP" />
+            <input autocomplete="off" type="submit" id="zip-submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="navbar-item" style="align-items: baseline;">
+
+          <form id="city-form">
+            <input autocomplete="off" type="text" id="city" size="15" maxlength="15" placeholder="City" style="width: 45%;"  />
+            <Input autocomplete="off" placeholder="AL" id="state" style="width: 15%;">
+            </select>
+            <input autocomplete="off" type="submit" id="city-submit" value="Submit" />
+          </form>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
-    <div class="pageContainer" id="pageContainer">
-      <div class="oneThird" id="top">
-        <p id="location"></p>
-        <p id="icon"></p>
-      </div>
-      <div class="oneThird" id="middle">
-        <p id="temperature"></p>
-        <p>&deg</p>
-      </div>
-      <div class="oneThird" id="bottom">
-        <div class="bottomItem">
-          <div class="info" id="winDiv">
-            <p class="title">wind</p>
-            <p id="wind"></p>
-          </div>
+
+  <div class="main-container">
+    <div class="top-body-section">
+      <p id="location" style="margin-bottom: 45px;"></p>
+      <i class="wi wi-day-snow display-none" id="chance-of-flurries" style="font-size: 60px"></i>
+      <i class="wi wi-day-rain" id="chance-of-rain" style="font-size: 60px"></i>
+      <i class="wi wi-day-sleet" id="chance-of-sleet" style="font-size: 60px"></i>
+      <i class="wi wi-day-snow" id="chance-of-snow" style="font-size: 60px"></i>
+      <i class="wi wi-day-storm-showers" id="chance-of-storm" style="font-size: 60px"></i>
+      <i class="wi wi-day-sunny" id="clear" style="font-size: 60px"></i>
+      <i class="wi wi-cloudy" id="cloudy" style="font-size: 60px"></i>
+      <i class="wi wi-day-cloudy" id="kinda-cloudy" style="font-size: 60px"></i>
+      <i class="wi wi-day-cloudy-high" id="hazy" style="font-size: 60px"></i>
+      <i class="wi wi-rain" id="rain" style="font-size: 60px"></i>
+      <i class="wi wi-sleet" id="sleet" style="font-size: 60px"></i>
+      <i class="wi wi-snow" id="snow" style="font-size: 60px"></i>
+      <i class="wi wi-rain" id="rain" style="font-size: 60px"></i>
+      <i class="wi wi-storm-showers" id="storm" style="font-size: 60px"></i>
+
+
+    </div>
+    <div class="bottom-body-section">
+      <div class="column">
+        <div class="column-section">
+
         </div>
-        <div class="bottomItem" id=rain>
-          <div class="info" id="rainDiv">
-            <p class="title">rain</p>
-            <p id="rainnum"></p>
-          </div>
+        <div class="column-section">
+          <i class="wi wi-strong-wind" style="font-size: 60px"></i>
+          <p id="wind" style="padding-top: 30px;"></p>
         </div>
-        <div class="bottomItem" id="humidityItem">
-          <div class="info" id="humiDiv">
-            <p class="title">humidity</p>
-            <p id="humidity"></p>
-          </div>
+      </div>
+
+      <div class="column">
+        <div class="column-section-temp">
+          <p id="temperature" style="margin-bottom: 15px; font-size: 100px;"></p>
+          <p style="font-size: 50px; padding-bottom: 50px;">&deg;</p>
+        </div>
+        <div class="column-section">
+          <i class="wi wi-rain" style="font-size: 60px"></i>
+          <p id="rainnum" style="padding-top: 30px;"></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-section">
+
+        </div>
+        <div class="column-section">
+          <i class="wi wi-humidity" style="font-size: 60px"></i>
+          <p id="humidity" style="padding-top: 30px;"></p>
         </div>
       </div>
     </div>
-    <script src="app.js" charset="utf-8"></script>
-  </body>
+  </div>
+
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/nav.js" charset="utf-8"></script>
+</body>
+
 </html>
