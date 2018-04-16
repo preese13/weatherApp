@@ -86,14 +86,6 @@ $(document).ready(function () {
 
   });
 
-  setInterval(function () {
-    if (isCity) {
-      getCity();
-    } else if (isZip) {
-      getZip();
-    }
-  }, 60000);
-
   $('#nav-icon').click(function () {
 
     $(this).toggleClass('open');
@@ -140,6 +132,10 @@ $(document).ready(function () {
         var rain = response.current_observation.precip_today_metric
         var icon = response.current_observation.icon
 
+        if(humidity > 100) {
+          humidity = '100+'
+        }
+
         $("#location").empty();
         $("#icon").empty();
         $("#temperature").empty();
@@ -149,7 +145,7 @@ $(document).ready(function () {
 
         //fills those fields with new variables
         $("#location").append(city + ", " + state);
-        $("#temperature").prepend(temp);
+        $("#temperature").prepend(temp + '&deg;');
         $("#humidity").append(humidity);
         $("#rainnum").prepend(rain + ' In.');
         $("#wind").prepend(wind + ' mph');
@@ -446,6 +442,10 @@ $(document).ready(function () {
         var rain = response.current_observation.precip_today_metric
         var icon = response.current_observation.icon
 
+        if(humidity > 100) {
+          humidity = '100+'
+        }
+
         $("#location").empty();
         $("#icon").empty();
         $("#temperature").empty();
@@ -455,7 +455,7 @@ $(document).ready(function () {
 
         //fills those fields with new variables
         $("#location").append(city + ", " + state);
-        $("#temperature").prepend(temp);
+        $("#temperature").prepend(temp + '&deg;');
         $("#humidity").append(humidity);
         $("#rainnum").prepend(rain + ' In.');
         $("#wind").prepend(wind + ' mph');
@@ -737,6 +737,3 @@ $(document).ready(function () {
 });
 
 
-/**
- * 
- */
