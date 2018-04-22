@@ -67,19 +67,19 @@ body {
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(255, 255, 255, .5);
+    color:white;
     opacity: 1;
     /* Firefox */
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: white;
+    color: white !important;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: white;
+    color: white !important;
 }
 
 input:focus {
