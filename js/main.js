@@ -2,12 +2,15 @@ $(document).ready(function () {
   var basePath = 'https://api.wunderground.com/api/9b8bea4c7d08eb23/geolookup/conditions/q/';
   var isOpen = false;
 
-  if (typeof (Storage) !== "undefined") {
+  if (typeof (Storage) !== "undefined") 
+  {
     zip = localStorage.zip;
     isZip = localStorage.isZip;
     city = localStorage.city;
     state = localStorage.state;
-  } else {
+  } 
+  else 
+  {
     var isZip = false;
     var isCity = false;
     var zip = null;
@@ -15,23 +18,23 @@ $(document).ready(function () {
     var state = null;
   }
 
-  if (localStorage.isCity === 'true') {
+  if (localStorage.isCity === 'true') 
+  {
     getCity();
-
-  } else if (localStorage.isZip === 'true') {
-
+  } 
+  else if (localStorage.isZip === 'true') 
+  {
     getZip();
   }
 
   $('#zip-submit').on('click', function (event) {
+    event.preventDefault();
+
     localStorage.setItem("isZip", 'true');
     localStorage.setItem("isCity", 'false');
 
-    event.preventDefault();
-
     zip = $('#zip').val();
     $('#zip').val("");
-
     var x = zip.toString();
     localStorage.setItem("zip", x);
 
@@ -48,7 +51,6 @@ $(document).ready(function () {
       $('.navbar-mobile').toggleClass('navbar-open');
     }
     isOpen = !isOpen;
-
 
   });
 
@@ -88,7 +90,6 @@ $(document).ready(function () {
 
   $('#nav-icon').click(function () {
 
-    $(this).toggleClass('open');
     $('.nav-info-container').toggleClass('display');
     window.scrollTo(0, 0);
 
@@ -100,8 +101,6 @@ $(document).ready(function () {
       $('.navbar-mobile').toggleClass('navbar-open');
     }
     isOpen = !isOpen;
-
-
   });
   $('#nav-refresh').click(function () {
     if (localStorage.isCity === 'true') {
@@ -114,6 +113,10 @@ $(document).ready(function () {
   });
 
 
+  function toggleNav()
+  {
+    
+  }
 
   function getCity() {
     $.ajax({
