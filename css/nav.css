@@ -36,7 +36,7 @@
     width: 100%;
     margin: auto;
     padding-top: 5px;
-    height: fit-content;
+    height: 100vh;
     background-color: #26A9DF;
 }
 
