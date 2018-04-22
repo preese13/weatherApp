@@ -26,7 +26,7 @@ input {
   padding: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  border-radius: 0px;
 }
 
 select {
