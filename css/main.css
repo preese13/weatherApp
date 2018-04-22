@@ -38,6 +38,9 @@ select {
   font-size: 25px;
   border-bottom: 1px solid white;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 button {
